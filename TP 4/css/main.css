@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 h1 {
     text-align: center;
     text-transform: uppercase;
-    font-family: Lato, Helvetica, Arial, sans-serif;
-    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
     font-style: normal;
     letter-spacing: 0.05em;
     font-size: 2rem;
@@ -11,18 +14,21 @@ h1 {
 
 body {
     margin:auto;
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
     color: rgba(0,0,0,0.75);
     background-color: #eeeeee !important;
 }
 
 header, footer {
-    font-family: Lato, Helvetica, Arial, sans-serif;
-    background-color:#135A80;
-    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    background-image: linear-gradient(90deg, #013dbe, #873dd6);
+    color: #88edfc;
 }
 
 nav {
-    padding: 15px;
+    padding: 20px;
 }
 
 footer {
@@ -30,11 +36,29 @@ footer {
     margin-top: 5%;
 }
 
+form {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
 .nav-button {
-    background-color: #73CEFF;
-    color: black;
+    background-color: #00c3f5;
+    color: white;
     text-decoration: none;
-    padding: 0.25%;
-    border-radius: 7px;
+    padding: 0.5% 1.2%;
+    border-radius: 15px;
+    font-family: 'Roboto', sans-serif;
     font-size: 100%;
+    font-weight: 400;
+}
+
+.body-button {
+    background-color: #693eeb;
+    color: white;
+    text-decoration: none;
+    padding: 0.5% 1.2%;
+    border-radius: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 100%;
+    font-weight: 400;
 }
