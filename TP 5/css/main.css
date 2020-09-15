@@ -102,17 +102,27 @@ menu {
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
     border-radius: 15px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     font-family: 'Roboto', sans-serif;
     font-size: 80%;
     font-weight: 400;
+    transition: background-color .3s;
 }
 
 .button.nav {
     background-color: #00c3f5;
 }
 
+.nav.button:hover {
+    background-color: #028aac;
+}
+
 .button.body {
     background-color: #693eeb;
+}
+
+.body.button:hover {
+    background-color: #4a2ba8;
 }
 
 .center {
@@ -125,10 +135,11 @@ menu {
     display: block;
     background-color: white;
     border-radius: 6px;
-    width: 75%;
+    width: 85%;
     margin-left: auto;
     margin-right: auto;
     padding: 10px;
+    box-sizing: border-box;
 }
 
 div.gallery > ul {
@@ -186,4 +197,37 @@ div.gallery > ul > li:last-child {
     width: auto;
     max-width: 800px;
     box-sizing: border-box;
+}
+
+@media (max-aspect-ratio: 1/1) {
+    .gallery {
+        width: 100%;
+    }
+    
+    div.gallery > ul > li {
+      height: 20vh;
+    }
+}
+
+@media screen and (max-height: 480px) {
+    div.gallery > ul > li {
+      height: 35vh;
+    }
+}
+
+@media (max-aspect-ratio: 1/1) and (max-width: 480px) {
+    div.gallery > ul {
+      flex-direction: row;
+    }
+  
+    div.gallery > ul > li {
+      height: auto;
+      width: 100%;
+    }
+  
+    div.gallery > ul > li > a > img {
+      width: 100%;
+      max-height: 50vh;
+      min-width: 0;
+    }
 }
