@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body {
+    color: rgba(0,0,0,0.75);
+    background-color: #eeeeee;
+    margin:auto;
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+}
+
+form {
+    display: block;
+    position: relative;
+    text-align: left;
+    padding: 10px 0 20px 3%;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+footer,  h1, header {
+    font-family: 'Roboto', sans-serif;
+}
+
+footer, header {
+    color: #88edfc;
+    font-weight: 400;
+    background-image: linear-gradient(25deg, #0176ca, #013dbe, #873dd6);
+}
+
+footer {
+    text-align: center;
+    margin-top: 5%;
+}
+
+footer > a > i {
+    color: #88edfc;
+    font-size: 2em;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 2em;
+    letter-spacing: 0.05em;
+    margin: 0px 0px 20px 0px;
+    padding-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.2rem;
+}
+
+input {
+    width: 100%;
+    height: 2rem;
+    padding: 6px 0;
+    text-indent: 2%;
+    border: 1px solid #ABB0B2;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    font-size: 1rem;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    width: 4%;
+    vertical-align: middle;
+}
+
+input[type="submit"] {
+    width:auto;
+}
+
+label {
+    color: #9e9e9e;
+    margin-top: 13px;
+    margin-right: 10px;
+    font-size: .9rem;
+}
+
+nav {
+    padding: 20px;
+    padding-bottom: 0px;
+    line-height: 2em;
+}
+
+menu {
+    margin-left: 0.75rem;
+    margin-right: 2.75rem;
+    margin-bottom: 1rem;
+}
+
+.button {
+    color: white;
+    text-decoration: none;
+    padding: 0.6em 1.2%;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    font-family: 'Roboto', sans-serif;
+    font-size: 80%;
+    font-weight: 400;
+    transition: background-color .3s;
+}
+
+.button.nav {
+    background-color: #00c3f5;
+}
+
+.nav.button:hover {
+    background-color: #028aac;
+}
+
+.button.body {
+    background-color: #693eeb;
+}
+
+.body.button:hover {
+    background-color: #4a2ba8;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gallery {
+    display: block;
+    background-color: white;
+    border-radius: 6px;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+div.gallery > ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+div.gallery > ul > li {
+    height: 30vh;
+    flex-grow: 1;
+    list-style-type:none;
+}
+
+div.gallery > ul > li > a > img {
+    max-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+}
+
+div.gallery > ul > li:last-child {
+    flex-grow: 10;
+}
+
+.input-box {
+    display: inline-flex;
+    width: 95%;
+    margin-bottom: 20px;
+}
+
+.label-text {
+    color: #9e9e9e;
+    margin-top: 1px;
+    margin-right: 10px;
+    font-size: .9rem;
+}
+
+.text-content {
+    line-height: 1.7em;
+    margin-top: 1.3em;
+    text-align: justify;
+}
+
+.text-image {
+    display: flex;
+    width: 100%;
+    max-width: 600px;
+}
+
+#signup_box {
+    background: #fff;
+    clear: left;
+    margin: auto;
+    width: auto;
+    max-width: 800px;
+    box-sizing: border-box;
+}
+
+@media (max-aspect-ratio: 1/1) {
+    .gallery {
+        width: 100%;
+    }
+    
+    div.gallery > ul > li {
+      height: 20vh;
+    }
+}
+
+@media screen and (max-height: 480px) {
+    div.gallery > ul > li {
+      height: 35vh;
+    }
+}
+
+@media (max-aspect-ratio: 1/1) and (max-width: 480px) {
+    div.gallery > ul {
+      flex-direction: row;
+    }
+  
+    div.gallery > ul > li {
+      height: auto;
+      width: 100%;
+    }
+  
+    div.gallery > ul > li > a > img {
+      width: 100%;
+      max-height: 50vh;
+      min-width: 0;
+    }
+}
