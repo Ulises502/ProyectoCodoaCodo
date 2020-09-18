@@ -250,10 +250,10 @@ div.gallery > ul > li:last-child {
     }
 }
 
-@media screen and (max-width: 640px) {
+@media only screen and (max-width: 600px) {
 
     h1 {
-        font-size: 24px;
+        font-size: 26px;
     }
 
     h2, h3 {
@@ -272,5 +272,28 @@ div.gallery > ul > li:last-child {
         font-size: 14px;
         line-height: 2;
     }
+}
 
+@media only screen and (max-width: 768px) and (min-width: 600px) {
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2, h3 {
+        font-size: 24px;
+    }
+
+    .button {
+        font-size: 12px;
+        padding: 6px 8px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+    }
+
+    .text-content {
+        font-size: 14px;
+        line-height: 2;
+    }
 }
