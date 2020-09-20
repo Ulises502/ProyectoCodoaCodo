@@ -68,6 +68,12 @@ h3 {
     margin-bottom: 30px;
 }
 
+h4 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+}
+
 input {
     width: 100%;
     height: 2rem;
@@ -103,12 +109,6 @@ nav {
     line-height: 2em;
 }
 
-menu {
-    margin-left: 0.75rem;
-    margin-right: 2.75rem;
-    margin-bottom: 1rem;
-}
-
 .button {
     color: white;
     text-decoration: none;
@@ -123,16 +123,6 @@ menu {
     transition: background-color .3s;
 }
 
-.button.nav {
-    background-color: #00c3f5;
-    box-shadow: inset 0 1px 0 #6ddcf8;
-}
-
-.nav.button:hover {
-    background-color: #0091B5;
-    box-shadow: inset 0 1px 0 #01708b;
-}
-
 .button.body {
     background-color: #693eeb;
     height: auto;
@@ -140,7 +130,7 @@ menu {
     text-indent: unset;
     box-shadow: inset 0 2px 0 #875EFF, 0 1px 3px rgba(0,0,0,0.2), 0 1px 2px rgba(0,0,0,0.3);
     font-size: 16px;
-    padding: 8px 14px;
+    padding: 8px 30px;
 }
 
 .body.button:hover {
@@ -152,6 +142,12 @@ menu {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.content {
+    margin-left: 0.75rem;
+    margin-right: 2.75rem;
+    margin-bottom: 1rem;
 }
 
 .gallery {
@@ -307,5 +303,129 @@ div.gallery > ul > li:last-child {
     .text-content {
         font-size: 14px;
         line-height: 2;
+    }
+}
+
+/*-------------------------------------------*/
+
+* {
+    box-sizing: border-box;
+}
+  
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+  
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+  
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    padding: 8px 10px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2), 0 1px 2px rgba(0,0,0,0.3), inset 0 2px 0 #65d2ee;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    transition: background-color .3s;
+    margin-bottom: 7px;
+    background-color: #00c3f5;
+}
+
+.menu li:hover {
+    background-color: #0091B5;
+    box-shadow: inset 0 2px 0 #028caf;
+}
+
+.menu li > a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    width: 100%;
+}
+  
+.aside {
+    margin-top: 2rem;
+    background-color: #00c3f5;
+    padding: 15px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+#logo {
+    padding-top: 15px;
+}
+
+#hour {
+    padding-left: 2rem;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+  
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+
+    .menu {
+        margin-top: 2rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    h3 {
+        text-align: left;
+    }
+
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+    .menu {
+        margin-top: 2rem;
+    }
+
+    .menu li {
+        margin-bottom: 10px;
+    }
+
+    #signup_box {
+        margin-top: 2rem;
     }
 }
