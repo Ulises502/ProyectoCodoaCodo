@@ -41,6 +41,11 @@ footer > div > a > i {
     font-size: 36px;
     margin-right: 10px;
     margin-left: 10px;
+    transition: font-size 0.4s;
+}
+
+footer > div > a > i:hover {
+    font-size: 45px;
 }
 
 h1 {
@@ -73,6 +78,7 @@ input {
     -moz-border-radius: 3px;
     border-radius: 3px;
     font-size: 1rem;
+    box-shadow: inset 0 2px 2px hsla(0, 0%, 0%, 0.1);
 }
 
 input[type="radio"], input[type="checkbox"] {
@@ -110,7 +116,7 @@ menu {
     -webkit-border-radius: 12px;
     -moz-border-radius: 12px;
     border-radius: 12px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2), 0 1px 2px rgba(0,0,0,0.3);
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     font-weight: 400;
@@ -119,10 +125,12 @@ menu {
 
 .button.nav {
     background-color: #00c3f5;
+    box-shadow: inset 0 1px 0 #6ddcf8;
 }
 
 .nav.button:hover {
-    background-color: #028aac;
+    background-color: #0091B5;
+    box-shadow: inset 0 1px 0 #01708b;
 }
 
 .button.body {
@@ -130,10 +138,14 @@ menu {
     height: auto;
     border: unset;
     text-indent: unset;
+    box-shadow: inset 0 2px 0 #875EFF, 0 1px 3px rgba(0,0,0,0.2), 0 1px 2px rgba(0,0,0,0.3);
+    font-size: 16px;
+    padding: 8px 14px;
 }
 
 .body.button:hover {
     background-color: #4a2ba8;
+    box-shadow: inset 0 2px 0 #392180;
 }
 
 .center {
@@ -285,7 +297,7 @@ div.gallery > ul > li:last-child {
     }
 
     .button {
-        font-size: 12px;
+        font-size: 14px;
         padding: 6px 8px;
         -webkit-border-radius: 10px;
         -moz-border-radius: 10px;
